@@ -13,10 +13,13 @@ export default function Footer() {
             <div className="absolute inset-0 rounded-2xl blur-2xl opacity-30" style={{ background: 'var(--gold)' }} />
             <div className="relative rounded-2xl p-10" style={{ background: 'var(--dark-card)', border: '1px solid rgba(201,168,76,0.4)' }}>
               <div className="text-xs tracking-widest uppercase mb-4 text-white/50" style={{ fontFamily: 'Cinzel, serif' }}>Полный набор</div>
-              <div className="text-6xl font-bold mb-2 text-white" style={{ fontFamily: 'Cinzel, serif', color: 'var(--gold)' }}>
+              <div className="text-6xl font-bold mb-2" style={{ fontFamily: 'Cinzel, serif', color: 'var(--gold)' }}>
                 2 500 ₽
               </div>
-              <p className="text-white/50 text-sm mb-8">Включает всё необходимое для игры на 2–6 человек</p>
+              <p className="text-white/50 text-sm mb-2">Включает всё необходимое для игры на 2–6 человек</p>
+              <p className="text-sm mb-8 font-medium" style={{ color: 'var(--teal)' }}>
+                🚚 Доставка только по Крыму
+              </p>
               <ul className="text-left space-y-3 mb-10">
                 {[
                   "80+ карточек с легендами Крыма",
@@ -32,7 +35,7 @@ export default function Footer() {
                 ))}
               </ul>
               <a
-                href="mailto:info@enigma-crimea.ru"
+                href="/order"
                 className="block w-full py-4 text-center text-sm uppercase tracking-widest font-semibold transition-all duration-300 hover:opacity-90 hover:scale-105 rounded-lg"
                 style={{ background: 'var(--gold)', color: '#0D1117', fontFamily: 'Cinzel, serif' }}
               >
@@ -61,14 +64,17 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-1 sm:gap-2">
                   <h3 className="mb-2 uppercase text-xs sm:text-sm" style={{ color: 'var(--gold)', fontFamily: 'Cinzel, serif' }}>Контакты</h3>
-                  <a href="mailto:info@enigma-crimea.ru" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                    info@enigma-crimea.ru
+                  <a href="tel:+79785553535" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
+                    +7 978 555-35-35
                   </a>
-                  <a href="https://t.me/enigmacrimea" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
+                  <a href="mailto:zagadkicrimea@gmail.com" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
+                    zagadkicrimea@gmail.com
+                  </a>
+                  <a href="https://t.me/zagadkacrimea" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
                     Telegram
                   </a>
-                  <a href="https://instagram.com/enigmacrimea" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                    Instagram
+                  <a href="https://vk.com/zagadkacrimea" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
+                    ВКонтакте
                   </a>
                 </div>
               </div>
@@ -77,9 +83,9 @@ export default function Footer() {
                   className="text-[14vw] sm:text-[12vw] lg:text-[10vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 font-bold tracking-tight"
                   style={{ color: 'var(--gold)', fontFamily: 'Cinzel, serif', opacity: 0.15 }}
                 >
-                  ENIGMA
+                  ЗАГАДКА
                 </h1>
-                <p className="text-white/30 text-sm sm:text-base">{new Date().getFullYear()} Enigma. Легенды Крыма</p>
+                <p className="text-white/30 text-sm sm:text-base">{new Date().getFullYear()} Загадка. Легенды Крыма</p>
               </div>
             </div>
           </div>
