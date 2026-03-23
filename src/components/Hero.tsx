@@ -26,19 +26,12 @@ export default function Hero() {
           ✦ Настольная игра ✦
         </div>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-white leading-tight" style={{ fontFamily: 'Cinzel, serif' }}>
-          Enigma.<br />
+          Загадка.<br />
           <span style={{ color: 'var(--gold)' }}>Легенды Крыма</span>
         </h1>
-        <p className="text-base md:text-xl max-w-2xl mx-auto mb-10 text-white/70 font-light leading-relaxed">
+        <p className="text-base md:text-xl max-w-2xl mx-auto text-white/70 font-light leading-relaxed">
           Открой полуостров по-новому — увлекательное путешествие в мир древних мифов, загадочных легенд и стратегической борьбы за тайны крымской земли
         </p>
-        <a
-          href="#pricing"
-          className="inline-block px-10 py-4 text-sm uppercase tracking-widest font-semibold transition-all duration-300 hover:scale-105"
-          style={{ background: 'var(--gold)', color: '#0D1117', fontFamily: 'Cinzel, serif' }}
-        >
-          Купить игру
-        </a>
       </motion.div>
 
       <motion.div
