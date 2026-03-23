@@ -1,38 +1,37 @@
 export default function Featured() {
   return (
-    <section id="about" className="min-h-screen flex flex-col lg:flex-row items-center px-6 py-20 lg:py-0" style={{ background: 'var(--dark-bg)' }}>
-      <div className="flex-1 lg:h-[90vh] flex items-center justify-center mb-12 lg:mb-0 lg:pr-16">
-        <div className="relative">
-          <div className="absolute inset-0 rounded-2xl blur-3xl opacity-20" style={{ background: 'var(--gold)' }} />
-          <img
-            src="https://cdn.poehali.dev/projects/853aaa2c-2f2d-41f4-9b3b-18a68c5eca7f/bucket/57dfd696-b020-4b10-a6bc-040e50a48dfd.jpg"
-            alt="Карта игры Enigma. Легенды Крыма"
-            className="relative rounded-2xl shadow-2xl max-h-[70vh] w-auto object-contain"
-            style={{ border: '1px solid rgba(201,168,76,0.3)' }}
-          />
+    <section id="about" className="py-24 px-6" style={{ background: 'var(--wf-bg-alt)' }}>
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex-1 flex items-center justify-center">
+          <div
+            className="w-full max-w-sm aspect-[3/4] rounded-2xl flex items-center justify-center"
+            style={{ background: 'var(--wf-placeholder)', border: '2px dashed var(--wf-border)' }}
+          >
+            <span className="text-sm font-medium" style={{ color: 'var(--wf-text-muted)' }}>Изображение игры</span>
+          </div>
         </div>
-      </div>
-      <div className="flex-1 flex flex-col justify-center max-w-xl">
-        <div className="text-xs tracking-[0.4em] uppercase mb-4" style={{ color: 'var(--teal)', fontFamily: 'Cinzel, serif' }}>
-          ✦ О проекте
+
+        <div className="flex-1 flex flex-col gap-6 max-w-xl">
+          <div className="text-xs uppercase tracking-widest font-medium" style={{ color: 'var(--wf-text-muted)' }}>
+            О проекте
+          </div>
+          <h2 className="text-3xl lg:text-5xl font-bold leading-tight" style={{ color: 'var(--wf-text)' }}>
+            Сохранить фольклор в эпоху технологий
+          </h2>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--wf-text-muted)' }}>
+            Загадка. Легенды Крыма — это живой мост между древними преданиями полуострова и современным миром. Каждая карточка, каждый ход хранит в себе фрагмент настоящей крымской легенды.
+          </p>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--wf-text-muted)' }}>
+            Игра создана для <strong style={{ color: 'var(--wf-text)' }}>студентов</strong>, увлечённых историей, <strong style={{ color: 'var(--wf-text)' }}>туристов</strong>, желающих открыть полуостров глубже, и <strong style={{ color: 'var(--wf-text)' }}>семей</strong>, которые ищут вечера, полные смысла и приключений.
+          </p>
+          <a
+            href="#features"
+            className="inline-block w-fit px-8 py-3 text-sm font-medium rounded-lg transition-opacity hover:opacity-80"
+            style={{ background: 'var(--wf-btn)', color: '#fff' }}
+          >
+            Узнать больше
+          </a>
         </div>
-        <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-white leading-tight" style={{ fontFamily: 'Cinzel, serif' }}>
-          Сохранить фольклор<br />
-          <span style={{ color: 'var(--gold)' }}>в эпоху технологий</span>
-        </h2>
-        <p className="text-white/60 text-base leading-relaxed mb-6">
-          Enigma. Легенды Крыма — это не просто настольная игра. Это живой мост между древними преданиями полуострова и современным миром. Каждая карточка, каждый ход хранит в себе фрагмент настоящей крымской легенды.
-        </p>
-        <p className="text-white/60 text-base leading-relaxed mb-8">
-          Игра создана для <span style={{ color: 'var(--gold)' }}>студентов</span>, увлечённых историей, <span style={{ color: 'var(--gold)' }}>туристов</span>, желающих открыть полуостров глубже, и <span style={{ color: 'var(--gold)' }}>семей</span>, которые ищут вечера, полные смысла и приключений.
-        </p>
-        <a
-          href="#features"
-          className="inline-block w-fit px-8 py-3 text-sm uppercase tracking-widest transition-all duration-300 hover:opacity-80"
-          style={{ border: '1px solid var(--gold)', color: 'var(--gold)', fontFamily: 'Cinzel, serif' }}
-        >
-          Узнать больше
-        </a>
       </div>
     </section>
   );
