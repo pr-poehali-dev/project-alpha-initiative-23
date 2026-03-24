@@ -16,7 +16,7 @@ export default function Promo() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-xs uppercase tracking-widest text-gray-500 mb-3">Особенности</div>
-            <h2 className="text-3xl font-bold text-gray-900">Почему выбирают Enigma</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Почему выбирают Загадку</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {features.map((f, i) => (
@@ -37,7 +37,7 @@ export default function Promo() {
           <div className="text-xs uppercase tracking-widest text-gray-500 mb-4">Масштаб проекта</div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Крым — только начало</h2>
           <p className="text-gray-600">
-            Enigma — платформа для сохранения культурного наследия. После Крыма серия расширится на другие регионы.
+            Загадка — платформа для сохранения культурного наследия. После Крыма серия расширится на другие регионы.
           </p>
         </div>
       </section>

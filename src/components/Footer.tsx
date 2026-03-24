@@ -15,7 +15,6 @@ export default function Footer() {
                 "80+ карточек с легендами Крыма",
                 "Игровое поле-карта полуострова",
                 "Фигурки и кубики",
-                "Правила на русском языке",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 text-gray-600 text-sm">
                   <span className="text-gray-400">—</span>
