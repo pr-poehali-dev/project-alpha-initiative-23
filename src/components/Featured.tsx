@@ -6,7 +6,7 @@ export default function Featured() {
           <div className="absolute inset-0 rounded-2xl blur-3xl opacity-20" style={{ background: 'var(--gold)' }} />
           <img
             src="https://cdn.poehali.dev/projects/853aaa2c-2f2d-41f4-9b3b-18a68c5eca7f/bucket/57dfd696-b020-4b10-a6bc-040e50a48dfd.jpg"
-            alt="Карта игры Enigma. Легенды Крыма"
+            alt="Карта игры Загадка. Легенды Крыма"
             className="relative rounded-2xl shadow-2xl max-h-[70vh] w-auto object-contain"
             style={{ border: '1px solid rgba(201,168,76,0.3)' }}
           />
@@ -21,7 +21,7 @@ export default function Featured() {
           <span style={{ color: 'var(--gold)' }}>в эпоху технологий</span>
         </h2>
         <p className="text-white/60 text-base leading-relaxed mb-6">
-          Enigma. Легенды Крыма — это не просто настольная игра. Это живой мост между древними преданиями полуострова и современным миром. Каждая карточка, каждый ход хранит в себе фрагмент настоящей крымской легенды.
+          Загадка. Легенды Крыма — это не просто настольная игра. Это живой мост между древними преданиями полуострова и современным миром. Каждая карточка, каждый ход хранит в себе фрагмент настоящей крымской легенды.
         </p>
         <p className="text-white/60 text-base leading-relaxed mb-8">
           Игра создана для <span style={{ color: 'var(--gold)' }}>студентов</span>, увлечённых историей, <span style={{ color: 'var(--gold)' }}>туристов</span>, желающих открыть полуостров глубже, и <span style={{ color: 'var(--gold)' }}>семей</span>, которые ищут вечера, полные смысла и приключений.

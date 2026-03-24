@@ -26,7 +26,7 @@ const features = [
   {
     icon: "Globe",
     title: "Масштабируемость",
-    desc: "Enigma — это платформа. Следующие выпуски охватят другие регионы и культуры мира.",
+    desc: "Загадка — это платформа. Следующие выпуски охватят другие регионы и культуры мира.",
   },
   {
     icon: "Award",
@@ -52,7 +52,7 @@ export default function Promo() {
               ✦ Особенности игры
             </div>
             <h2 className="text-3xl lg:text-5xl font-bold text-white" style={{ fontFamily: 'Cinzel, serif' }}>
-              Почему выбирают <span style={{ color: 'var(--gold)' }}>Enigma</span>
+              Почему выбирают <span style={{ color: 'var(--gold)' }}>Загадку</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -97,7 +97,7 @@ export default function Promo() {
             Крым — только<br /><span style={{ color: 'var(--gold)' }}>начало пути</span>
           </h2>
           <p className="text-white/60 max-w-xl text-base leading-relaxed">
-            Enigma — это живая платформа для сохранения культурного наследия через игру. После Крыма серия расширится на другие регионы России и мира. Каждый уголок планеты заслуживает своей легенды.
+            Загадка — это живая платформа для сохранения культурного наследия через игру. После Крыма серия расширится на другие регионы России и мира. Каждый уголок планеты заслуживает своей легенды.
           </p>
         </div>
       </div>
