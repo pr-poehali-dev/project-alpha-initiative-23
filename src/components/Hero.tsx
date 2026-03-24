@@ -1,19 +1,26 @@
 export default function Hero() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100 border-b border-gray-300">
-      <div className="text-center px-6 max-w-3xl mx-auto">
-        <div className="text-xs uppercase tracking-widest text-gray-500 mb-4">Настольная игра</div>
-        <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          Загадка. Легенды Крыма
-        </h1>
-        <p className="text-lg text-gray-600 mb-8">
-          Настольная игра о крымских легендах для 2–6 игроков
-        </p>
+    <div className="flex flex-col items-center justify-center min-h-[85vh] px-6 text-center" style={{ background: 'var(--wf-bg)' }}>
+      <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ color: 'var(--wf-text)' }}>
+        Загадка. Легенды Крыма
+      </h1>
+      <p className="text-lg md:text-xl mb-12" style={{ color: 'var(--wf-text-muted)' }}>
+        Настольная игра о культурном наследии полуострова
+      </p>
+      <div className="flex gap-6 flex-wrap justify-center">
         <a
           href="#about"
-          className="inline-block px-8 py-3 bg-gray-800 text-white text-sm uppercase tracking-widest hover:bg-gray-700"
+          className="px-10 py-4 rounded-xl text-base font-medium transition-opacity hover:opacity-80"
+          style={{ background: 'var(--wf-btn)', color: '#fff' }}
         >
-          Узнать больше
+          О проекте
+        </a>
+        <a
+          href="/order"
+          className="px-10 py-4 rounded-xl text-base font-medium transition-opacity hover:opacity-80"
+          style={{ background: 'var(--wf-btn-dark)', color: '#fff' }}
+        >
+          Заказать игру
         </a>
       </div>
     </div>

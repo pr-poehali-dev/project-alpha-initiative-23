@@ -1,15 +1,22 @@
-export default function Header() {
+interface HeaderProps {
+  className?: string;
+}
+
+export default function Header({ className }: HeaderProps) {
   return (
-    <header className="w-full bg-gray-200 border-b border-gray-400 px-6 py-4">
-      <div className="flex justify-between items-center max-w-5xl mx-auto">
-        <div className="font-bold text-gray-800 uppercase tracking-widest text-sm">
-          ЗАГАДКА
-        </div>
-        <nav className="flex gap-8">
-          <a href="#about" className="text-gray-600 hover:text-gray-900 text-sm uppercase">О проекте</a>
-          <a href="#features" className="text-gray-600 hover:text-gray-900 text-sm uppercase">Особенности</a>
-          <a href="#pricing" className="text-gray-600 hover:text-gray-900 text-sm uppercase">Купить</a>
-        </nav>
+    <header className={`sticky top-0 z-50 px-8 py-4 flex items-center justify-between ${className ?? ""}`} style={{ background: 'var(--wf-header)', borderBottom: '1px solid var(--wf-border)' }}>
+      <div className="flex-1 flex items-center gap-12">
+        <a href="#about" className="text-sm font-medium" style={{ color: 'var(--wf-text)' }}>О проекте</a>
+        <a href="#features" className="text-sm font-medium" style={{ color: 'var(--wf-text)' }}>Особенности</a>
+      </div>
+
+      <div className="flex-shrink-0">
+        <div className="w-12 h-12 rounded-full" style={{ background: 'var(--wf-bg)' }} />
+      </div>
+
+      <div className="flex-1 flex items-center justify-end gap-12">
+        <a href="#reviews" className="text-sm font-medium" style={{ color: 'var(--wf-text)' }}>Отзывы</a>
+        <a href="#pricing" className="text-sm font-medium" style={{ color: 'var(--wf-text)' }}>Контакты</a>
       </div>
     </header>
   );

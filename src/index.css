@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -10,29 +12,47 @@
     --card: 0 0% 96%;
     --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 96%;
+    --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 0 0% 20%;
+    --primary: 0 0% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 90%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 0 0% 93%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 0 0% 85%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 0 0% 88%;
+    --accent-foreground: 0 0% 20%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 80%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 20%;
+    --input: 0 0% 92%;
+    --ring: 0 0% 40%;
 
-    --radius: 0.25rem;
+    --radius: 0.75rem;
+
+    /* Wireframe palette */
+    --wf-bg: #ffffff;
+    --wf-bg-alt: #f5f5f5;
+    --wf-border: #d0d0d0;
+    --wf-text: #1a1a1a;
+    --wf-text-muted: #888888;
+    --wf-btn: #999999;
+    --wf-btn-dark: #555555;
+    --wf-header: #cccccc;
+    --wf-placeholder: #c8c8c8;
+
+    /* Legacy aliases for compatibility */
+    --gold: #999999;
+    --gold-light: #bbbbbb;
+    --teal: #777777;
+    --dark-bg: #ffffff;
+    --dark-card: #f5f5f5;
   }
 }
 
@@ -42,14 +62,19 @@
   }
 
   body {
-    @apply bg-white text-gray-900;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--wf-bg);
+    color: var(--wf-text);
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
   }
 
   h1,
   h2,
   h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: "Inter", sans-serif;
   }
 }
