@@ -1,96 +1,62 @@
 export default function Footer() {
   return (
     <>
-      <section id="pricing" className="py-24 px-6" style={{ background: 'var(--dark-bg)' }}>
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="text-xs tracking-[0.4em] uppercase mb-4" style={{ color: 'var(--teal)', fontFamily: 'Cinzel, serif' }}>
-            ✦ Каталог и цены
-          </div>
-          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-16" style={{ fontFamily: 'Cinzel, serif' }}>
-            Получи игру сегодня
-          </h2>
-          <div className="relative inline-block w-full max-w-md">
-            <div className="absolute inset-0 rounded-2xl blur-2xl opacity-30" style={{ background: 'var(--gold)' }} />
-            <div className="relative rounded-2xl p-10" style={{ background: 'var(--dark-card)', border: '1px solid rgba(201,168,76,0.4)' }}>
-              <div className="text-xs tracking-widest uppercase mb-4 text-white/50" style={{ fontFamily: 'Cinzel, serif' }}>Полный набор</div>
-              <div className="text-6xl font-bold mb-2" style={{ fontFamily: 'Cinzel, serif', color: 'var(--gold)' }}>
-                2 500 ₽
-              </div>
-              <p className="text-white/50 text-sm mb-2">Включает всё необходимое для игры на 2–6 человек</p>
-              <p className="text-sm mb-8 font-medium" style={{ color: 'var(--teal)' }}>
-                🚚 Доставка только по Крыму
-              </p>
-              <ul className="text-left space-y-3 mb-10">
-                {[
-                  "80+ карточек с легендами Крыма",
-                  "Игровое поле-карта полуострова",
-                  "Фигурки и кубики",
-                  "Правила на русском языке",
-                  "Эксклюзивный арт-дизайн",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-white/70 text-sm">
-                    <span style={{ color: 'var(--gold)' }}>✦</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="/order"
-                className="block w-full py-4 text-center text-sm uppercase tracking-widest font-semibold transition-all duration-300 hover:opacity-90 hover:scale-105 rounded-lg"
-                style={{ background: 'var(--gold)', color: '#0D1117', fontFamily: 'Cinzel, serif' }}
-              >
-                Заказать игру
-              </a>
-            </div>
+      <section id="pricing" className="py-20 px-6 bg-gray-100 border-b border-gray-300">
+        <div className="max-w-md mx-auto text-center">
+          <div className="text-xs uppercase tracking-widest text-gray-500 mb-3">Цена</div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Получи игру сегодня</h2>
+          <div className="bg-white border border-gray-300 p-8">
+            <div className="text-xs uppercase text-gray-400 mb-3">Полный набор</div>
+            <div className="text-5xl font-bold text-gray-900 mb-2">2 500 ₽</div>
+            <p className="text-gray-500 text-sm mb-2">Для 2–6 игроков</p>
+            <p className="text-gray-500 text-sm mb-6">Доставка по Крыму</p>
+            <ul className="text-left space-y-2 mb-8">
+              {[
+                "80+ карточек с легендами Крыма",
+                "Игровое поле-карта полуострова",
+                "Фигурки и кубики",
+                "Правила на русском языке",
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-gray-600 text-sm">
+                  <span className="text-gray-400">—</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="/order"
+              className="block w-full py-3 text-center text-sm uppercase tracking-widest font-semibold bg-gray-800 text-white hover:bg-gray-700"
+            >
+              Заказать игру
+            </a>
           </div>
         </div>
       </section>
 
-      <div
-        className="relative h-[400px] sm:h-[600px] lg:h-[800px] max-h-[800px]"
-        style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
-      >
-        <div className="relative h-[calc(100vh+400px)] sm:h-[calc(100vh+600px)] lg:h-[calc(100vh+800px)] -top-[100vh]">
-          <div className="h-[400px] sm:h-[600px] lg:h-[800px] sticky top-[calc(100vh-400px)] sm:top-[calc(100vh-600px)] lg:top-[calc(100vh-800px)]">
-            <div className="py-4 sm:py-6 lg:py-8 px-4 sm:px-6 h-full w-full flex flex-col justify-between" style={{ background: '#08090C' }}>
-              <div className="flex shrink-0 gap-8 sm:gap-12 lg:gap-20">
-                <div className="flex flex-col gap-1 sm:gap-2">
-                  <h3 className="mb-2 uppercase text-xs sm:text-sm" style={{ color: 'var(--gold)', fontFamily: 'Cinzel, serif' }}>Навигация</h3>
-                  {[["#about", "О проекте"], ["#features", "Особенности"], ["#pricing", "Купить"]].map(([href, label]) => (
-                    <a key={href} href={href} className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                      {label}
-                    </a>
-                  ))}
-                </div>
-                <div className="flex flex-col gap-1 sm:gap-2">
-                  <h3 className="mb-2 uppercase text-xs sm:text-sm" style={{ color: 'var(--gold)', fontFamily: 'Cinzel, serif' }}>Контакты</h3>
-                  <a href="tel:+79785553535" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                    +7 978 555-35-35
-                  </a>
-                  <a href="mailto:zagadkicrimea@gmail.com" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                    zagadkicrimea@gmail.com
-                  </a>
-                  <a href="https://t.me/zagadkacrimea" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                    Telegram
-                  </a>
-                  <a href="https://vk.com/zagadkacrimea" className="text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base">
-                    ВКонтакте
-                  </a>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
-                <h1
-                  className="text-[14vw] sm:text-[12vw] lg:text-[10vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 font-bold tracking-tight"
-                  style={{ color: 'var(--gold)', fontFamily: 'Cinzel, serif', opacity: 0.15 }}
-                >
-                  ЗАГАДКА
-                </h1>
-                <p className="text-white/30 text-sm sm:text-base">{new Date().getFullYear()} Загадка. Легенды Крыма</p>
-              </div>
+      <footer className="bg-gray-200 border-t border-gray-400 px-6 py-10">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between gap-8">
+          <div>
+            <h3 className="text-xs uppercase font-bold text-gray-700 mb-3">Навигация</h3>
+            <div className="flex flex-col gap-1">
+              {[["#about", "О проекте"], ["#features", "Особенности"], ["#pricing", "Купить"]].map(([href, label]) => (
+                <a key={href} href={href} className="text-gray-500 hover:text-gray-900 text-sm">{label}</a>
+              ))}
             </div>
           </div>
+          <div>
+            <h3 className="text-xs uppercase font-bold text-gray-700 mb-3">Контакты</h3>
+            <div className="flex flex-col gap-1">
+              <a href="tel:+79785553535" className="text-gray-500 hover:text-gray-900 text-sm">+7 978 555-35-35</a>
+              <a href="mailto:zagadkicrimea@gmail.com" className="text-gray-500 hover:text-gray-900 text-sm">zagadkicrimea@gmail.com</a>
+              <a href="https://t.me/zagadkacrimea" className="text-gray-500 hover:text-gray-900 text-sm">Telegram</a>
+              <a href="https://vk.com/zagadkacrimea" className="text-gray-500 hover:text-gray-900 text-sm">ВКонтакте</a>
+            </div>
+          </div>
+          <div className="self-end">
+            <p className="text-gray-400 text-sm">{new Date().getFullYear()} Загадка. Легенды Крыма</p>
+          </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }
